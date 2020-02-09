@@ -11,3 +11,30 @@ GAN은 input으로 noise를 준다.
 워드 제너레이션 -> 워드로 부터 특징을 추출함.
 2개를 결합해서, 영상을 주고 영상에 대한 이미지 캡셔닝을 함.
 이미지 캡셔닝이 되면 비디오 캡셔닝이 되죠.
+
+
+panoptic segmentation은 instance segmentation에서 하나 더 나아가서, 배경까지 segmentation 하는 것
+
+segmentation 하려면 이거를 이해하셔야 할 거 같아요.
+
+
+batch(=iter) & update(학습) ∈ epoch(shuffle)
+
+
+
+실습
+
+FCN
+FC 대신 DeConv가 이썽서 뻥튀기가 되었다.
+(공간정보를 살려서 가다가 upsampling을 하자.
+
+fixme를 하나씩 수정해주세요. 
+stride 2는 2x2를 의미해요
+
+deconv로 256,256으로 올라갑니다.
+
+opendata set이라고 medical dataset을 구할 수 있어요.
+
+
+https://research.google/pubs/pub45732/
+논문저널.
