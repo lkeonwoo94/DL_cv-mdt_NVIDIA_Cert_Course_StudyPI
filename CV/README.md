@@ -31,7 +31,7 @@
 
 ----
 
-[ML역사 그림]
+![ML역사 그림](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/ML.png)
 
 ## WEEK1
 http://solarisailab.com/deep-learning
@@ -48,16 +48,17 @@ http://solarisailab.com/deep-learning
 
 
 > Backpropagation & Vanishing Gradient
+![vanishing](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/CV/img/underfit-vanishing.jpg)
 ```
 * backpropagation : a라는 실제를 train결과 b라는 예측을 했을 때, weight를 조절하는 것
 * sigmoid -> gradien vanishing -> weight가 update가 안되요 (미분한게 0이라서)
-[미분0 그림 넣기]
 * backpropagation은 layer의 입/출력에 대해 **각각이 서로 얼마나 영향을 미치는지**.
+* loss function은 정답과의 차이를 어떻게 넘겨주겠다. (제곱으로 하겠다, 절대값으로 하겠다)
 ```
 
 > IMAGE PROCESSING    
 
- **png가 제일 좋다.**
+ ###### **png가 제일 좋다.**
 
 > 딥러닝 특징
 ```
@@ -76,6 +77,8 @@ http://solarisailab.com/deep-learning
 ```
 * image map = feauture map
 * RGB 이미지는 feature를 3개 뽑았다 (3 channel)
+* 32x32x3 -> 28x28x6 이 되었다 ? 이게 **feature extraction** 됐다고 보시면 돼요.
+
 * 1차원에서 Conv.는 훑고 지나가는것.
 * 마찬가지로 2차원에서도 훑고 지나가는 컨셉을 이해하시면 돼요.
 * Conv의 개념은 1D던,2D던 다 **Feature를 뽑아낸다**고 생각하시면 돼요.
@@ -100,56 +103,17 @@ http://solarisailab.com/deep-learning
 > Challenge
 * 이미지넷은 1000개 정도로 레이블링이 많이 되어있어요. 여기서 competition을 많이 합니다(challenge)
 
+### 자잘한 Tip
 
-
-p33.
-
-
-
-p36.
-* loss function은 정답과의 차이를 어떻게 넘겨주겠다. (제곱으로 하겠다, 절대값으로 하겠다)
-
-
-p38.
-* depth 3 = 3 channel = RGB (일반적)
-* 32x32x3 -> 28x28x6 이 되었다 ? 이게 **feature extraction** 됐다고 보시면 돼요.
-* feature map은 생각보다 깨끗하지 않아요. noise도 있고요, 0 이하의 값들은 다 0으로 맞춰요(ReLU)
-
-
----
-
-(9:00pm-10:00pm)
-* 실습
-* loss 를 minimize 하는게 학습이 되는 원리.
-* 영상 자체를 외워버리는게 overfit
-
-[Open DIGITS](http://ec2-3-133-104-8.us-east-2.compute.amazonaws.com/g2yGjI5Q/datasets/20171102-180326-8901)
-
-* digit에서 imageset을 만들 수 있어요. 폴더의 링크만 넣어주면 알아서 labeling 돼요.
-* dataset 클릭해서 classification 문제인지 이런 task를 지정할 수 있어요.
-
-* explore the db를 클릭하면 이미 label된 그림을 볼 수 있어요.
-
-* epoch이 한 영상 을 다 한번 보여줬을 때
-* customize 누르면 model 구체적으로 코드를 볼 수도 있고, 시각화도 볼 수 있음.(연결이 잘 되었는지 확인)
-* 이거는 주피터 노트북에 다 나와있어요.
-
-* loss가 줄어들다가 튄 것은, 계수를 움직여 봤는데 아차 싶은 것. 다시 원래대로 돌아옴
 * learning rate은 처음에 세게 줘야함 (local optima 빠지지 않기 위해서)
 * 그래서 learning rate decay가 존재함.
 
-* loss도 hyperparameter.
-
-* loss가 달라지는것은
-* 1. filter를 선언했을 때 계수들이 random. 그래서 시작점 부터 다르다.
-* 2. 학습을 할 수록 (새로운 epoch 일수록), data를 shuffling을 한다. 순서를 똑같이 하면 순서를 외워버릴 수가 있잖아요. 그래서 새 epoch마다 data 순서를 바꿔요.
-
-
-* layer가 깊어질수록(feature map의 depth가 깊어질수록) resolution이 줄어들어요
-* 이유1. 메모리가 줄어들어서
-
+* epoch -> data shuffling
+* batch(=iter) & update(학습) ∈ epoch
+* layer가 깊어질수록(feature map의 depth가 깊어질수록) resolution이 줄어들어요 (메모리가 줄어들어서)
 
 * FC : 2차원이 1차원으로 바뀜 (max pooling하고 vector로 만듬) (공간정보 없어짐)
 
+-----
 
 
