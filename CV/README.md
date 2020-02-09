@@ -31,91 +31,61 @@
 
 ----
 
+[ML역사 그림]
 
 ## WEEK1
-(8:00pm-9:00pm)
-
 http://solarisailab.com/deep-learning
 
-
-p1.
 * Computer Vision은 **영상**, 이미지 위주로만 다룬다 -> Classification, Detection, Segmentation.
 * MDT는 Word generation과 영상분석을 포함하는 Multiple Data type.
 * MDT는 2개의 data를 합쳐서 뭔가를 만들어낸다. 예를 들어 이미지가 주어지면 Captioning을 한다던가, 특징을 추출해서 binding.
-
 * DLI는 이론 위주가 아닌, 다 안다는 전제하에 실습 위주로 한다.
 
-p2.
-* Deployment : 어떻게 코딩 할 것인지
-* Performance : 실제 적용시 어떻게 퍼포먼스 높일지 ( 하이퍼파라미터 조절)
-
-p3.
-* 이미지 프로세싱 : digitized image
-* NIVIDA 제공의 DIGIT interface 사용할 것입니다. 
-* 딥러닝 엔진은 Tensorflow, pytorch 이런게 있는데, Caffe 기반으로 돌릴 예정입니다.(플랫폼)
+* NIVIDA 제공의 DIGIT interface 사용.
+* 딥러닝 엔진은 Tensorflow, pytorch 등등 존재, Caffe 기반으로 돌릴 예정 (플랫폼)
 
 
-p4. 역사
-[사진2장.]
-* 모델 -> 학습을 서포트 해주는 GPU 개발 -> 빅데이터 커짐
-* 조합이 잘 되서 딥러닝이 등장.
 
-
-p7.
-* FC= Flatten
+> Backpropagation & Vanishing Gradient
 * backpropagation : a라는 실제를 train결과 b라는 예측을 했을 때, weight를 조절하는 것
 * sigmoid -> gradien vanishing -> weight가 update가 안되요 (미분한게 0이라서)
 [미분0 그림 넣기]
+* backpropagation은 layer의 입/출력에 대해 **각각이 서로 얼마나 영향을 미치는지**.
 
+> IMAGE PROCESSING
+ **png가 제일 좋다.**
 
-p10.
-* 이미지넷은 1000개 정도로 레이블링이 많이 되어있어요. 여기서 competition을 많이 합니다(challenge)
-* 2012년에 딥러닝을 사용하면서 에러가 10% 떨어졌죠.
+> 딥러닝 특징
+* ML와 비교했을 때 feature extraction이 따로 없음
+* FC= Flatten
 * labeling 매긴 것을 GT=Ground Truth
 
 
-
-p13.
-* 딥러닝은 처음에 simple한 feature 뽑고, 나중에는 complex 뽑음.
-* (ML와 비교했을 때 feature extraction이 따로 없음)
-
-p15.
-**CNN**
+> CNN
 * image map = feauture map
-* 1. feature를 3개 뽑았어요 (3 channel)
-* 점점 feature를 complex하게 뽑는다고 생각하시면 돼요.
-
-p16.
-* Semantic Segmentation은 pixel 하나하나씩 봐서 고양이인지 산인지 풀인지를 따는거에요.
-* Semantic Segmentation은 각각의 요소가 뭔지 모르고 구분하는 것. (test set에서)
-* photoshop이 이게 굉장히 잘 되어있죠.
-
-* Object detection은 box를 쳐주는데, box를 통해 어디에 있는지 알 수있죠.
-
-* Instance Segmentation은 개들을 빨간색으로 하면서, 서로 다른 개들을 segmentation 해주는거에요. label1, label2.
-
-* 이 수업에서는 segmentation와 detection까지 나갈 거에요.
-
-
-p20.
-* gan은 noise를 주면 만들어내요
-
-
-p24.
-* IMAGE PROCESSING
-* jpeg으로는 왠만하면 학습 안시키는게 좋아요(압축하면서 데이터 손실).
-* 갤러리에서 사진 클릭하면 압축이 풀리면서 보여요.(디코딩) 저장시 이미 원본 데이터가 아니에요.
-* **png가 제일 좋다.**
-* dcm은 의료용
-* bmp로 하면 압축이 거의 안되고(simple한 압축 algorithm), png는 효율적으로 함.
-
-p.28
+* RGB 이미지는 feature를 3개 뽑았다 (3 channel)
 * 1차원에서 Conv.는 훑고 지나가는것.
 * 마찬가지로 2차원에서도 훑고 지나가는 컨셉을 이해하시면 돼요.
 
 * 학습이 된다는 의미는. 0과 1이라는 필터(filter == kernel)가 업데이트 되면서 조금씩 바뀌어요.
 * 필터가 처음부터 끝까지 다 sliding을 해요.
 * Conv의 개념은 1D던,2D던 다 **Feature를 뽑아낸다**고 생각하시면 돼요.
+* pixel 값이 0에 가까울 수록 검은색. 255에 가까울 수록 흰색.
+* **흰색일 수록 feature가 뽑혔다고 생각하면 돼요**
+
+
+> Segmentation
+* Object detection은 box를 쳐주는데, box를 통해 위치정보를 알 수있죠.
+* Semantic Segmentation은 pixel 하나하나씩 봐서 고양이인지 산인지 풀인지를 따지는 것. 각각의 요소가 뭔지 모르고 구분한다.
+* Instance Segmentation은 개들을 빨간색으로 하면서, 서로 다른 개들을 segmentation 해주는거에요. label1, label2.
+* Panoptic segmentation은 instance segmentation에서 하나 더 나아가서, 배경까지 segmentation 하는 것
+
+
+
+
+> Challenge
+* 이미지넷은 1000개 정도로 레이블링이 많이 되어있어요. 여기서 competition을 많이 합니다(challenge)
+
 
 
 p30.
@@ -133,12 +103,9 @@ p30.
 * 보통 edge를 추출하는 filter의 경우 sum이 0입니다.
 * sum이 0이 되어야 edge가 아닌 부분이 검게 나온다.
 
-p32.
-* filter는 hyperparameter 들 중 하나이고, 뭐로 하던간에 잘돼요. hypterparameter는 실험 중에 바꿀 수 있어요.
-
 
 p33.
-* backpropagation은 layer의 입/출력에 대해 **각각이 서로 얼마나 영향을 미치는지**.
+
 
 
 p36.
