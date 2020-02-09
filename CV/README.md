@@ -51,7 +51,7 @@ http://solarisailab.com/deep-learning
 ```
 
 
-> Backpropagation & Vanishing Gradient
+> **Backpropagation & Vanishing Gradient**
 
 ```
 * backpropagation : a라는 실제를 train결과 b라는 예측을 했을 때, weight를 조절하는 것
@@ -64,11 +64,11 @@ http://solarisailab.com/deep-learning
 
 
 
-> IMAGE PROCESSING    
+> **IMAGE PROCESSING**     
 
  ###### **png가 제일 좋다.**
 
-> 딥러닝 특징
+> **딥러닝 특징**
 ```
 * ML와 비교했을 때 feature extraction이 따로 없음
 * FC= Flatten
@@ -81,7 +81,7 @@ http://solarisailab.com/deep-learning
 
 ```
 
-> CNN
+> **CNN**
 ```
 * image map = feauture map
 * RGB 이미지는 feature를 3개 뽑았다 (3 channel)
@@ -98,7 +98,7 @@ http://solarisailab.com/deep-learning
 * **흰색일 수록 feature가 뽑혔다고 생각하면 돼요**
 ```
 
-> Segmentation
+> **Segmentation**
 ```
 * Object detection은 box를 쳐주는데, box를 통해 위치정보를 알 수있죠.
 * Semantic Segmentation은 pixel 하나하나씩 봐서 고양이인지 산인지 풀인지를 따지는 것. 각각의 요소가 뭔지 모르고 구분한다.
