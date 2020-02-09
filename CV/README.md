@@ -55,7 +55,8 @@ http://solarisailab.com/deep-learning
 * backpropagation은 layer의 입/출력에 대해 **각각이 서로 얼마나 영향을 미치는지**.
 ```
 
-> IMAGE PROCESSING
+> IMAGE PROCESSING    
+
  **png가 제일 좋다.**
 
 > 딥러닝 특징
@@ -63,6 +64,12 @@ http://solarisailab.com/deep-learning
 * ML와 비교했을 때 feature extraction이 따로 없음
 * FC= Flatten
 * labeling 매긴 것을 GT=Ground Truth
+
+* 딥러닝이 뭘하냐? 정말 많은 feature를 뽑아요. feature 하나당 filter 하나 있다고 생각하시면 돼요.
+* feature map을 뽑기 위해서, 계수들이 중요한데, 그 계수들을 하나하나 업데이트 해주는 거에요.
+* 그러면서 feature가 layer를 지나면서 high level이 돼요.
+* high level이 무슨 의미냐면, 앞에서는 low 한 feature (현미경같은). high level은 반대.
+
 ```
 
 > CNN
@@ -71,10 +78,11 @@ http://solarisailab.com/deep-learning
 * RGB 이미지는 feature를 3개 뽑았다 (3 channel)
 * 1차원에서 Conv.는 훑고 지나가는것.
 * 마찬가지로 2차원에서도 훑고 지나가는 컨셉을 이해하시면 돼요.
+* Conv의 개념은 1D던,2D던 다 **Feature를 뽑아낸다**고 생각하시면 돼요.
 
 * 학습이 된다는 의미는. 0과 1이라는 필터(filter == kernel)가 업데이트 되면서 조금씩 바뀌어요.
 * 필터가 처음부터 끝까지 다 sliding을 해요.
-* Conv의 개념은 1D던,2D던 다 **Feature를 뽑아낸다**고 생각하시면 돼요.
+
 * pixel 값이 0에 가까울 수록 검은색. 255에 가까울 수록 흰색.
 * **흰색일 수록 feature가 뽑혔다고 생각하면 돼요**
 ```
@@ -92,22 +100,6 @@ http://solarisailab.com/deep-learning
 > Challenge
 * 이미지넷은 1000개 정도로 레이블링이 많이 되어있어요. 여기서 competition을 많이 합니다(challenge)
 
-
-
-p30.
-* 소벨 필터 보면 피쳐를 뽑고 붙여넣고.
-* pixel 값이 0에 가까울 수록 검은색. 255에 가까울 수록 흰색.
-* **흰색일 수록 feature가 뽑혔다고 생각하면 돼요**
-* 딥러닝이 뭘하냐? 정말 많은 feature를 뽑아요. feature 하나당 filter 하나 있다고 생각하시면 돼요.
-* feature map을 뽑기 위해서, 계수들이 중요한데, 그 계수들을 하나하나 업데이트 해주는 거에요.
-* 그러면서 feature가 layer를 지나면서 high level이 돼요.
-* high level이 무슨 의미냐면, 앞에서는 low 한 feature (현미경같은). high level은 반대.
-* 기존 ML에서는 필터의 계수를 수학적으로 모델링 했는데, 지금은 몇x몇 와꾸만 잡아주면 알아서 튜닝이 되면서 바뀌어요.
-* Conv를 통해서, feature를 뽑기도 하고, 원본 영상을 blurring을 하기도 하고 합니다.
-
-* filter 내 weight의 sum은 0이 아니에요. (sobel filter의 sum은 0이길래 여쭤봣습니다.) (가우시안은 sum을 1로 맞추고요)
-* 보통 edge를 추출하는 filter의 경우 sum이 0입니다.
-* sum이 0이 되어야 edge가 아닌 부분이 검게 나온다.
 
 
 p33.
