@@ -31,9 +31,13 @@
 
 ----
 
-![ML역사 그림](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/ML.png)
+
 
 ## WEEK1
+
+![ML역사 그림](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/ML.png)
+
+
 http://solarisailab.com/deep-learning
 
 ```
@@ -48,13 +52,17 @@ http://solarisailab.com/deep-learning
 
 
 > Backpropagation & Vanishing Gradient
-![vanishing](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/CV/img/underfit-vanishing.jpg)
+
 ```
 * backpropagation : a라는 실제를 train결과 b라는 예측을 했을 때, weight를 조절하는 것
 * sigmoid -> gradien vanishing -> weight가 update가 안되요 (미분한게 0이라서)
 * backpropagation은 layer의 입/출력에 대해 **각각이 서로 얼마나 영향을 미치는지**.
 * loss function은 정답과의 차이를 어떻게 넘겨주겠다. (제곱으로 하겠다, 절대값으로 하겠다)
 ```
+![vanishing](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/CV/img/underfit-vanishing.jpg)
+    
+
+
 
 > IMAGE PROCESSING    
 
@@ -100,7 +108,7 @@ http://solarisailab.com/deep-learning
 
 
 
-> Challenge
+> **Challenge**
 * 이미지넷은 1000개 정도로 레이블링이 많이 되어있어요. 여기서 competition을 많이 합니다(challenge)
 
 ### 자잘한 Tip
