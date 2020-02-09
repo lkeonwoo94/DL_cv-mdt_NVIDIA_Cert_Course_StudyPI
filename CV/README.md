@@ -36,6 +36,7 @@
 ## WEEK1
 http://solarisailab.com/deep-learning
 
+```
 * Computer Vision은 **영상**, 이미지 위주로만 다룬다 -> Classification, Detection, Segmentation.
 * MDT는 Word generation과 영상분석을 포함하는 Multiple Data type.
 * MDT는 2개의 data를 합쳐서 뭔가를 만들어낸다. 예를 들어 이미지가 주어지면 Captioning을 한다던가, 특징을 추출해서 binding.
@@ -43,25 +44,29 @@ http://solarisailab.com/deep-learning
 
 * NIVIDA 제공의 DIGIT interface 사용.
 * 딥러닝 엔진은 Tensorflow, pytorch 등등 존재, Caffe 기반으로 돌릴 예정 (플랫폼)
-
+```
 
 
 > Backpropagation & Vanishing Gradient
+```
 * backpropagation : a라는 실제를 train결과 b라는 예측을 했을 때, weight를 조절하는 것
 * sigmoid -> gradien vanishing -> weight가 update가 안되요 (미분한게 0이라서)
 [미분0 그림 넣기]
 * backpropagation은 layer의 입/출력에 대해 **각각이 서로 얼마나 영향을 미치는지**.
+```
 
 > IMAGE PROCESSING
  **png가 제일 좋다.**
 
 > 딥러닝 특징
+```
 * ML와 비교했을 때 feature extraction이 따로 없음
 * FC= Flatten
 * labeling 매긴 것을 GT=Ground Truth
-
+```
 
 > CNN
+```
 * image map = feauture map
 * RGB 이미지는 feature를 3개 뽑았다 (3 channel)
 * 1차원에서 Conv.는 훑고 지나가는것.
@@ -72,14 +77,15 @@ http://solarisailab.com/deep-learning
 * Conv의 개념은 1D던,2D던 다 **Feature를 뽑아낸다**고 생각하시면 돼요.
 * pixel 값이 0에 가까울 수록 검은색. 255에 가까울 수록 흰색.
 * **흰색일 수록 feature가 뽑혔다고 생각하면 돼요**
-
+```
 
 > Segmentation
+```
 * Object detection은 box를 쳐주는데, box를 통해 위치정보를 알 수있죠.
 * Semantic Segmentation은 pixel 하나하나씩 봐서 고양이인지 산인지 풀인지를 따지는 것. 각각의 요소가 뭔지 모르고 구분한다.
 * Instance Segmentation은 개들을 빨간색으로 하면서, 서로 다른 개들을 segmentation 해주는거에요. label1, label2.
 * Panoptic segmentation은 instance segmentation에서 하나 더 나아가서, 배경까지 segmentation 하는 것
-
+```
 
 
 
