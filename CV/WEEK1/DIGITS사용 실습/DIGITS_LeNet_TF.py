@@ -1,3 +1,6 @@
+# 	Intended image size 	28x28 (gray)
+
+
 from model import Tower
 from utils import model_property
 import tensorflow as tf
