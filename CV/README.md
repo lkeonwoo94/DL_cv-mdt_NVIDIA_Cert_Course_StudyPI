@@ -112,15 +112,18 @@ http://solarisailab.com/deep-learning
 * 이미지넷은 1000개 정도로 레이블링이 많이 되어있어요. 여기서 competition을 많이 합니다(challenge)
 
 ### 자잘한 Tip
-
+```
 * learning rate은 처음에 세게 줘야함 (local optima 빠지지 않기 위해서)
 * 그래서 learning rate decay가 존재함.
-
+```
+```
 * epoch -> data shuffling
 * batch(=iter) & update(학습) ∈ epoch
+```
+```
 * layer가 깊어질수록(feature map의 depth가 깊어질수록) resolution이 줄어들어요 (메모리가 줄어들어서)
-
 * FC : 2차원이 1차원으로 바뀜 (max pooling하고 vector로 만듬) (공간정보 없어짐)
+```
 
 -----
 
