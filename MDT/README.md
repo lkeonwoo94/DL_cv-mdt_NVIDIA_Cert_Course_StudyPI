@@ -59,6 +59,7 @@ DICOM viewer: https://www.santesoft.com/win/sante-dicom-viewer-pro/sante-dicom-v
 1. MLP로 쌓아도 되는데 왜 Conv 를 쓰는가? => 유의한 feature를 뽑기위해(2차원정보)
 
 > 1주차 리뷰
+
 Precision : 다수도 맞추는 문제 -> dice 로 loss function 바꿈.
 dice : GT와 Predict 의 겹치는 부분.
 (min대상)loss : 1-dice  / dice가 올라가게끔 학습
