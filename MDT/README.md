@@ -73,13 +73,13 @@ Task1 : TF로 segment 분할
 
 > Word Generator
 
-RNN은 자기가 자기한테 들어가죠
-RNN은 시간에 따라 나오는 정보를 넣음.
-word는 단어를 넣었을 때 그 다음 단어가 나오도록
+RNN은 자기가 자기한테 들어가죠    
+RNN은 시간에 따라 나오는 정보를 넣음.    
+word는 단어를 넣었을 때 그 다음 단어가 나오도록    
 
-one-hot encoding으로 dictionary 
+one-hot encoding으로 dictionary 순서를매김      
 
-요즘은 transfomer architecture도 잇더라고요.
+요즘은 transfomer architecture도 잇더라고요.    
 
 > RNN application
 * one-to-one : vanilla
@@ -87,5 +87,13 @@ one-hot encoding으로 dictionary
 * many-to-one : setiment classification : 장문이 들어가서 하나의 단어
 * many-to-many : 기계번역
 * many-to-many : video captioning으로 적용 될 수 있음.
+
+> 실습2
+
+RNN도 단어를 만들기 위해서 컴퓨터가 이해하도록 dictionary를 one-hot encoding으로 만들어 준다.
+
+predict를 높이기 위해    
+epoch을 늘일 수도 있고, hidden레이어를 늘일수도 있고,  RNN레이어(num_layer: 세로 레이어)를 바꿀 수도 있고.
+dropout으로 overfitting문제 해결.
 
 ---
