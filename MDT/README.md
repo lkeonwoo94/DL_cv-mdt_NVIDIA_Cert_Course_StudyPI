@@ -1,6 +1,7 @@
 ## WEEK1
 
 > RNN : 말이 긍정이다/부정이다 표현 할 수 있음
+
 > GAN : input으로 noise를 준다.
 
 * 1주차 segmentation    
