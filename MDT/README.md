@@ -23,7 +23,7 @@ batch(=iter) & update(학습) ∈ epoch(shuffle)
 
 ---
 
-실습 (공부 후 수정 필요)
+실습
 
 FCN
 FC 대신 DeConv가 있어서 뻥튀기가 되었다.
