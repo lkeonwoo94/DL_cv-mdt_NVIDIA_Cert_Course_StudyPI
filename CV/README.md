@@ -130,6 +130,9 @@ http://solarisailab.com/deep-learning
 ## WEEK2 (수정필요)
 ## [캐글](https://www.kaggle.com/)
 
+
+![오버피팅](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/CV/img/overfit.png)   
+
 > ## **overfitting**
 
 * 데이터가 많은 경우: **class들간에 각각의 데이터 양이 일정하게 비슷해야** overfitting을 피할 수 있다.    
