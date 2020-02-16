@@ -12,5 +12,9 @@ DICOM viewer: https://www.santesoft.com/win/sante-dicom-viewer-pro/sante-dicom-v
 
 > 1주차 리뷰
 
+Precision : 다수도 맞추는 문제 -> dice 로 loss function 바꿈   .       
+dice : GT와 Predict 의 겹치는 부분.    
+(min대상)loss : 1-dice  / dice가 올라가게끔 학습    
+
 
 > Word Generator
