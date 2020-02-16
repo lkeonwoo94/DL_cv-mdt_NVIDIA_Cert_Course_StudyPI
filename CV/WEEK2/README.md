@@ -14,14 +14,18 @@ overfitting이 발생한다면, 많은 수의 data를 포함하는 class에 치�
 * strong overfitting : valdiation과 test가 벌어짐 => Regularization, Early stopping, Dropout 등으로 해결
 
 > ## **deployment**
+학습된 모델을 porting 하는 것.
 
 > ## **Transferlearning**
 
 
 ---
 8:30~ 실습
-1. OPEN DIGITS 클릭
-2. New classification dataset . 
+* 1. OPEN DIGITS 클릭
+* 2. New classification dataset . 
+
+1. GPU TASK2 : new dataset 생성
+2. GPU TASK3 : deployment , 전처리는 resize
 
 snapshot interval..?
 
