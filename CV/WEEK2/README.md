@@ -25,7 +25,8 @@ overfitting이 발생한다면, 많은 수의 data를 포함하는 class에 치�
 * 2. New classification dataset . 
 
 1. GPU TASK2 : new dataset 생성
-2. GPU TASK3 : deployment , 전처리는 resize
+2. GPU TASK3 : deployment 
+* 전처리 :  resize(train/test) , normalize(계산량을 줄임 & 값이 잘나옴)
 
 snapshot interval..?
 
