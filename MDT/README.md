@@ -64,9 +64,13 @@ Precision : 다수도 맞추는 문제 -> dice 로 loss function 바꿈
 dice : GT와 Predict 의 겹치는 부분.    
 (min대상)loss : 1-dice  / dice가 올라가게끔 학습    
 
+> 1주차 실습 리뷰
+실습1
+Task1 : TF로 segment 분할
+
+
+---
 
 > Word Generator
 
 ---
-실습1
-Task1 : TF로 segment 분할
