@@ -24,7 +24,7 @@ overfitting이 발생한다면, 많은 수의 data를 포함하는 class에 치�
 * 2. New classification dataset . 
 
 1. GPU TASK2 : new dataset 생성
-2. GPU TASK3 : 
+2. GPU TASK3 : deployment
 
 snapshot interval..?
 
