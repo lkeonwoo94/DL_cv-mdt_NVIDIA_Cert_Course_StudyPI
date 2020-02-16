@@ -1,6 +1,7 @@
-RNN은 말을 한게 긍정이다/부정이다 표현 할 수 있고
+## WEEK1
 
-GAN은 input으로 noise를 준다.
+> RNN : 말이 긍정이다/부정이다 표현 할 수 있음
+> GAN : input으로 noise를 준다.
 
 * 1주차 segmentation    
 * 2주차 word generation (예상하는 모델 학습)    
@@ -11,16 +12,20 @@ GAN은 input으로 noise를 준다.
 2개를 결합해서, 영상을 주고 영상에 대한 이미지 캡셔닝을 함.    
 이미지 캡셔닝이 되면 비디오 캡셔닝이 되죠.    
 
+> Segmentation
 
 panoptic segmentation은 instance segmentation에서 하나 더 나아가서, 배경까지 segmentation 하는 것    
-batch(=iter) & update(학습) ∈ epoch(shuffle)
+
+> batch 와 epoch
+
+batch(=iter) & update(학습) ∈ epoch(shuffle)    
 
 ---
 
 실습
 
 FCN
-FC 대신 DeConv가 이썽서 뻥튀기가 되었다.
+FC 대신 DeConv가 있어서 뻥튀기가 되었다.
 (공간정보를 살려서 가다가 upsampling을 하자.
 
 fixme를 하나씩 수정해주세요. 
@@ -33,3 +38,9 @@ opendata set이라고 medical dataset을 구할 수 있어요.
 
 https://research.google/pubs/pub45732/
 논문저널.
+
+
+--- 
+
+## WEEK2
+
