@@ -20,8 +20,11 @@ overfitting이 발생한다면, 많은 수의 data를 포함하는 class에 치�
 
 ---
 8:30~ 실습
-1. OPEN DIGITS 클릭
-2. New classification dataset . 
+* 1. OPEN DIGITS 클릭
+* 2. New classification dataset . 
+
+1. GPU TASK2 : new dataset 생성
+2. GPU TASK3 : 
 
 snapshot interval..?
 
