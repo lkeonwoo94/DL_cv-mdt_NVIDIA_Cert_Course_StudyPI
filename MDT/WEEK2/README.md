@@ -1,4 +1,5 @@
 > 지난주 질문
+    
 DICOM xray
 -> DICOM 최근 스펙문서에 의하면 default type으로 JPEG2000이 지정되어 있습니다. JPEG도 다양한 버전이 있는데, JPEG2000의 경우 lossless입니다. 제가 수업시간에 언급한 JPEG는 카메라나 저희가 컴퓨터비전에서 image file을 save할 때 보통 사용되는 일반JPEG로써 2000과는 다릅니다.     
 그러니, 원본이 복원되는 lossless JPEG인 경우일 확률이 크며, 걱정하지 않으셔도 됩니다.    
