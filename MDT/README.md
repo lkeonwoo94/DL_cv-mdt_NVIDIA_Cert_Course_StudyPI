@@ -67,3 +67,6 @@ dice : GT와 Predict 의 겹치는 부분.
 
 > Word Generator
 
+---
+실습1
+Task1 : TF로 segment 분할
