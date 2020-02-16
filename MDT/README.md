@@ -73,4 +73,19 @@ Task1 : TF로 segment 분할
 
 > Word Generator
 
+RNN은 자기가 자기한테 들어가죠
+RNN은 시간에 따라 나오는 정보를 넣음.
+word는 단어를 넣었을 때 그 다음 단어가 나오도록
+
+one-hot encoding으로 dictionary 
+
+요즘은 transfomer architecture도 잇더라고요.
+
+> RNN application
+* one-to-one : vanilla
+* one-to-many : image captioning : image -> words
+* many-to-one : setiment classification : 장문이 들어가서 하나의 단어
+* many-to-many : 기계번역
+* many-to-many : video captioning으로 적용 될 수 있음.
+
 ---
