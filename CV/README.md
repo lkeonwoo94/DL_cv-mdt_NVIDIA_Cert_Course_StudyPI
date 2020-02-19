@@ -127,8 +127,11 @@ http://solarisailab.com/deep-learning
 
 -----
 
-## WEEK2 (수정필요)
+## WEEK2
 ## [캐글](https://www.kaggle.com/)
+
+
+![오버피팅](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/CV/img/overfit.png)   
 
 > ## **overfitting**
 
@@ -140,18 +143,21 @@ http://solarisailab.com/deep-learning
                       **최소 클래스별 500개**정도씩 가지고 계시다면 시작해볼 순 있을 것 같습니다.    
 
 
-* little overfitting : validation과 test가 비슷한 수치로 상승 => **model을 더 깊게 만들어서 해결**
-* strong overfitting : valdiation과 test가 벌어짐 => Regularization, Early stopping, Dropout 등으로 해결
+* little overfitting : validation과 test가 비슷한 수치로 상승 => **model을 더 깊게 만들어서 해결**  /   **트레이닝을 너무 적게한 케이스**
+* strong overfitting : valdiation과 test가 벌어짐 => **Regularization, Early stopping, Dropout 등으로 해결** / **이게 진짜 오버피팅이라고 할 수 있어요**
 
 > ## **deployment**
 학습된 모델을 porting 하는 것.
 
 > ## **Transferlearning**
 
-> ?
+> ?ppt에 있는데 수업 안함 
 * 전처리 :  resize(train/test) , normalize(계산량을 줄임 & 값이 잘나옴)
 
-snapshot interval..?
+> 실습
+
+1. GPU TASK2 : new dataset 생성
+2. GPU TASK3 : deployment
 
 
 ---

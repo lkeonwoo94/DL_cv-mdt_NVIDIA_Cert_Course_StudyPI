@@ -79,7 +79,7 @@ word는 단어를 넣었을 때 그 다음 단어가 나오도록
 
 one-hot encoding으로 dictionary 순서를매김      
 
-요즘은 transfomer architecture도 잇더라고요.    
+요즘은 transformer architecture도 잇더라고요.    
 
 > RNN application
 * one-to-one : vanilla
