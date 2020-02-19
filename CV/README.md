@@ -127,7 +127,7 @@ http://solarisailab.com/deep-learning
 
 -----
 
-## WEEK2 (수정필요)
+## WEEK2
 ## [캐글](https://www.kaggle.com/)
 
 
@@ -154,7 +154,10 @@ http://solarisailab.com/deep-learning
 > ?ppt에 있는데 수업 안함 
 * 전처리 :  resize(train/test) , normalize(계산량을 줄임 & 값이 잘나옴)
 
-snapshot interval..?
+> 실습
+
+1. GPU TASK2 : new dataset 생성
+2. GPU TASK3 : deployment
 
 
 ---
