@@ -48,3 +48,6 @@ GT는 정답을 직접 만들어야 한다. online에 label을 위한 툴이 있
 
 NMS를 쓰면 threshold에 따라서 b-box가 1개로 만들어짐.
 
+http://ec2-3-136-108-117.us-east-2.compute.amazonaws.com/1ZbODU8T/notebooks/tasks/task-assessment/task
+
+Job Directory 복사.
