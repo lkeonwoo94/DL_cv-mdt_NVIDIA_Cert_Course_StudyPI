@@ -97,3 +97,5 @@ epoch을 늘일 수도 있고, hidden레이어를 늘일수도 있고,  RNN레�
 dropout으로 overfitting문제 해결.
 
 ---
+
+# WEEK3
