@@ -120,11 +120,13 @@ https://github.com/tensorflow/tensorflow/blob/r2.0/tensorflow/python/ops/nn_ops.
 
 -> Convolutional neural network를 통해 공간정보로부터 다양한 feature를 추출할 수 있기 때문입니다. 공간정보를 없애면서 처리하는 fully connected layer이 맨 앞에 배치된 채로 feature를 추출하게 되버리면 영상에서 공간상에서 나타날 수 있는 형태 (눈, 코, 입, 등등)를 나타내는 정보들을 추출할 수 없는 것이죠.
 
-```python
+```
 arXiv.orgarXiv.org
 Deep Residual Learning for Image Recognition
 Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We...
 tensorflow/python/ops/nn_ops.py:4232-4317
+```
+```python
 @tf_export("nn.dropout", v1=[])
 def dropout_v2(x, rate, noise_shape=None, seed=None, name=None):
   """Computes dropout.
