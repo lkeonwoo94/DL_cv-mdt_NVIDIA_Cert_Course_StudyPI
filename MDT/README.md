@@ -99,3 +99,26 @@ dropout으로 overfitting문제 해결.
 ---
 
 # WEEK3
+
+> Segmentation (뒷단 수정)
+
+FC -> FCN : Classification -> Segmentation 문제로. ( upsampling  or deconvolution)
+
+> Dice coefficient
+background를 많이 맞춰도 precision이 증가함 -> dice로 대체 (GT와 PD의 1-IoU로 사용 ) : 어떻게 해서든 loss가 감소하는 방향으로 감
+
+
+> Image Captioning
+labeling이 되어 있는 MS COCO data set 사용
+**VGG 는 굉장히 널리 쓰이는 Classification Network**
+이미지를 문장으로 인코딩함
+VGG의 끝단을 FC로 사용
+
+keras.io/application 가면 architecture들이 많아요
+
+FC를 이용해서 분류가 되게끔 MLP가 학습이 된다(word 부분)
+MSCOCO dataset에 영상과 부합하는 caption들이 있다
+
+epoch 는 batch를 random하게 shuffle
+
+
