@@ -215,17 +215,13 @@ Deconv / Upsampling으로 Output을 키운다( FC대신 Fully convolution.)
 
 feature의 위치정보도 나와있음. detectuib 알고리즘은 **좌표정보**도 필요. 좌표정보도 loss로 들어가서 학습이 돼야함.    
 
-재학습을 할때는 loss를 낮게 주는게 중요하다.    
+재학습을 할때는 loss를 낮게 주는게 중요하다.(transfer learning)    
 B-box는 GT와 PD 사이의 거리를 통해서 학습을 시킨다.    
 그래서 두개를 더한 loss가 줄어들게끔 학습을 합니다.    
 
 GT는 정답을 직접 만들어야 한다. online에 label을 위한 툴이 있다. b-box를 넣으면 text file로 떨어진다.    
    
 NMS를 쓰면 threshold에 따라서 b-box가 1개로 만들어짐.    
-
-http://ec2-3-136-108-117.us-east-2.compute.amazonaws.com/1ZbODU8T/notebooks/tasks/task-assessment/task
-
-Job Directory 복사.
 
 
 
