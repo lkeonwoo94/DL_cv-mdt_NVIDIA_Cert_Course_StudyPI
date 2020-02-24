@@ -16,4 +16,4 @@ NVIDIA 국제 인증과정 - 컴퓨터 비전 딥러닝 &amp; 다중 데이터 �
 
 ![SGD](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/SGD.png)   
 ![opt](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/opt.png)
-![optmizer발달]
+![optmizer발달](https://github.com/lkeonwoo94/DL_cv-mdt_NVIDIA_Cert_Course_StudyPI/blob/master/optmizer%EB%B0%9C%EB%8B%AC.png)
